@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import streamlit as st
-from streamlit.logger import get_logger
+# import streamlit as st
+# from streamlit.logger import get_logger
 
-LOGGER = get_logger(__name__)
-from streamlit.hello.utils import show_code
+# LOGGER = get_logger(__name__)
+# from streamlit.hello.utils import show_code
 
 import streamlit as st 
 from streamlit_option_menu import option_menu
