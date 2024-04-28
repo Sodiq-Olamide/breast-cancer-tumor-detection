@@ -440,29 +440,29 @@ def prediction():
             with open('SVM.pkl', 'rb') as file:
                 model = pickle.load(file)
             st.success("Support Vector Machine Classifier Predictions")
-        elif option == "KNN":
+        if option == "KNN":
             with open('KNN.pkl', 'rb') as file:
                 model = pickle.load(file)
             st.success("K-Nearest Neighbor Classifier Predictions")
-        elif option == "Random Forest":
+        if option == "Random Forest":
             with open('Random Forest.pkl', 'rb') as file:
                 model = pickle.load(file)
             st.success("Random Forest Classifier Predictions")
-        elif option == "Decision Tree":
+        if option == "Decision Tree":
             with open('Decision Tree.pkl', 'rb') as file:
                 model = pickle.load(file)
             st.success("Decision Tree Classifier Predictions")
-        elif option == "Naive Bayes":
+        if option == "Naive Bayes":
             with open('Naive Bayes.pkl', 'rb') as file:
                 model = pickle.load(file)
             st.success("Naive Bayes Classifier Predictions")
-        elif option == "Logistic Regression":
+        if option == "Logistic Regression":
             with open('Logistic Regression.pkl', 'rb') as file:
                 model = pickle.load(file)
             st.success("Logistic Regression Classifier Predictions")
         
         prediction = model.predict(pro_df)
-            #Concat into a dataframe
+        #Concat into a dataframe
         predicted_df = pd.concat([data["id"], pd.Series(prediction, name="Result")],axis=1)
         predicted_df = predicted_df.reset_index(drop=True)
         # predicted_df.columns = ["id","Result"]
