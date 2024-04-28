@@ -114,4 +114,4 @@ to display geospatial data."""
 
 mapping_demo()
 
-show_code(mapping_demo)
+#show_code(mapping_demo)
