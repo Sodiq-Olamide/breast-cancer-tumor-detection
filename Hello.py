@@ -439,21 +439,27 @@ def prediction():
         if option == "SVM":
             with open('SVM.pkl', 'rb') as file:
                 model = pickle.load(file)
+            st.success("Support Vector Machine Classifier Predictions")
         elif option == "KNN":
             with open('KNN.pkl', 'rb') as file:
                 model = pickle.load(file)
+            st.success("K-Nearest Neighbor Classifier Predictions")
         elif option == "Random Forest":
-            with open('RandomForest.pkl', 'rb') as file:
+            with open('Random Forest.pkl', 'rb') as file:
                 model = pickle.load(file)
+            st.success("Random Forest Classifier Predictions")
         elif option == "Decision Tree":
-            with open('DecisionTree.pkl', 'rb') as file:
+            with open('Decision Tree.pkl', 'rb') as file:
                 model = pickle.load(file)
+            st.success("Decision Tree Classifier Predictions")
         elif option == "Naive Bayes":
-            with open('NaiveBayes.pkl', 'rb') as file:
+            with open('Naive Bayes.pkl', 'rb') as file:
                 model = pickle.load(file)
+            st.success("Naive Bayes Classifier Predictions")
         elif option == "Logistic Regression":
-            with open('LogisticRegression.pkl', 'rb') as file:
+            with open('Logistic Regression.pkl', 'rb') as file:
                 model = pickle.load(file)
+            st.success("Logistic Regression Classifier Predictions")
         
         prediction = model.predict(pro_df)
             #Concat into a dataframe
