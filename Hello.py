@@ -466,7 +466,7 @@ def prediction():
             #     st.error("Tumor Detected")
             # else:
             #     st.success("Tumor Not Detected")
-        st.dataframe(predicted_df.head())
+        st.dataframe(predicted_df)
             
 
 
