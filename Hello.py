@@ -511,7 +511,7 @@ def about_us():
 #     main()
 
 
-def main():
+def run():
     with st.sidebar:
         selected = option_menu(
             menu_title="Main Menu", #Remove the default title
@@ -536,7 +536,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run()
 
   
 
