@@ -72,6 +72,6 @@ st.write(
 (Data courtesy of the [UN Data Explorer](http://data.un.org/Explorer.aspx).)"""
 )
 
-data_frame_demo()
+#data_frame_demo()
 
 #show_code(data_frame_demo)
