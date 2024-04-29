@@ -19,7 +19,7 @@
 # from streamlit.hello.utils import show_code
 
 import streamlit as st 
-st.set_page_config(initial_sidebar_state="collapsed")
+#st.set_page_config(initial_sidebar_state="collapsed")
 from streamlit_option_menu import option_menu
 from streamlit_lottie import st_lottie
 
